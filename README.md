@@ -1,4 +1,4 @@
-# Simple Hotkeys
+# Auto Use Soulgems
 This plugin made with Example plugin template for use with CommonLibSSE by [Ryan-rsm-McKenzie.](https://github.com/Ryan-rsm-McKenzie/ExamplePlugin-CommonLibSSE)
 
 SKSE64 Plugin made for automatically using Soulgems with enchanted weapons.
