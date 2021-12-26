@@ -31,7 +31,7 @@ set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>" CACHE STR
 # ---- Project ----
 
 project(
-	ExampleProject
+	AutoUseSoulgems
 	VERSION 1.0.0
 	LANGUAGES CXX
 )
@@ -81,6 +81,7 @@ set(Boost_USE_STATIC_LIBS ON)
 
 add_subdirectory("extern/CommonLibSSE" CommonLibSSE)
 
+find_package(binary_io REQUIRED CONFIG)
 find_package(spdlog REQUIRED CONFIG)
 
 # ---- Add source files ----
@@ -133,6 +134,7 @@ target_link_libraries(
 	${PROJECT_NAME}
 	PRIVATE
 		CommonLibSSE::CommonLibSSE
+		binary_io::binary_io
 		spdlog::spdlog
 )
 
