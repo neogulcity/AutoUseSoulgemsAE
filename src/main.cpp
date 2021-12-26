@@ -182,6 +182,8 @@ public:
 							float modvalue = SoulValue.kSoulValue[static_cast<uint32_t>(UsingSoulLevel) - 1];
 							modvalue = rCharge + modvalue > MAXcharge ? MAXcharge - rCharge : modvalue;
 
+							logger::debug("modvalue : {}", modvalue);
+
 							akAggressor->ModActorValue(RE::ActorValue::kRightItemCharge, modvalue);
 
 							float expvalue = SoulValue.kExpValue[static_cast<uint32_t>(UsingSoulLevel) - 1];
@@ -457,7 +459,6 @@ extern "C" DLLEXPORT bool SKSEAPI SKSEPlugin_Load(const SKSE::LoadInterface* a_s
 	return true;
 }
 
-#ifdef SKYRIMAE
 extern "C" DLLEXPORT constinit auto SKSEPlugin_Version = []() {
 	SKSE::PluginVersionData data{};
 	data.pluginVersion = Version::MAJOR;
@@ -467,4 +468,3 @@ extern "C" DLLEXPORT constinit auto SKSEPlugin_Version = []() {
 	data.UsesAddressLibrary(true);
 	return data;
 }();
-#endif
