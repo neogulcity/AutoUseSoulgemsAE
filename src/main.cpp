@@ -191,7 +191,7 @@ public:
 							if (!a_vm)
 								return RE::BSEventNotifyControl::kContinue;
 
-							AddItem(a_vm, akAggressor, AzuraStar, 1, true);
+							AddItem(a_vm, akAggressor, UsingSoulgem, 1, true);
 						} else {
 							a_Soulgem.push_back(a_SoulgemStar[0]);
 						}
@@ -323,7 +323,7 @@ public:
 							if (!a_vm)
 								return RE::BSEventNotifyControl::kContinue;
 
-							AddItem(a_vm, akAggressor, AzuraStar, 1, true);
+							AddItem(a_vm, akAggressor, UsingSoulgem, 1, true);
 						} else {
 							a_Soulgem.push_back(a_SoulgemStar[0]);
 						}
