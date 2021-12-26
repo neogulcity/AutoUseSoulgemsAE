@@ -1,4 +1,7 @@
-This is a basic plugin template for use with CommonLibSSE
+# Simple Hotkeys
+This plugin made with Example plugin template for use with CommonLibSSE by [Ryan-rsm-McKenzie.](https://github.com/Ryan-rsm-McKenzie/ExamplePlugin-CommonLibSSE)
+
+SKSE64 Plugin made for automatically using Soulgems with enchanted weapons.
 
 ## Requirements
 * [CMake](https://cmake.org/)
@@ -16,8 +19,7 @@ This is a basic plugin template for use with CommonLibSSE
 
 ## Building
 ```
-git clone https://github.com/Ryan-rsm-McKenzie/ExamplePlugin-CommonLibSSE
-cd ExamplePlugin-CommonLibSSE
-git submodule update --init --recursive
+git clone https://github.com/neogulcity/AutoUseSoulgemsSSE
+cd AutoUseSoulgemsSSE
 cmake -B build -S .
 ```
