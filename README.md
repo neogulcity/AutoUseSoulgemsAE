@@ -19,8 +19,8 @@ SKSE64 Plugin made for automatically using Soulgems with enchanted weapons.
 
 ## Building
 ```
-git clone https://github.com/neogulcity/AutoUseSoulgemsSSE
-cd AutoUseSoulgemsSSE
+git clone https://github.com/neogulcity/AutoUseSoulgemsAE
+cd AutoUseSoulgemsAE
 git submodule update --init --recursive
 cmake -B build -S .
 ```
